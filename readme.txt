@@ -12,19 +12,19 @@ Apply web typography standards to Wordpress content: space control, punctuation,
 
 == Description ==
 
-The plugin implements advanced rules of web typography into Worpdress site. For features list see description of [Muravjev Typograph](http://translate.google.com/translate?hl=ru&sl=ru&tl=en&u=http%3A%2F%2Fmdash.ru%2Frules.html).
+The plugin implements advanced rules of web typography into Worpdress site. For full features list see description of [Muravjev Typograph](http://translate.google.com/translate?hl=ru&sl=ru&tl=en&u=http%3A%2F%2Fmdash.ru%2Frules.html).
 
-For best performance we recommend to use plugin in conjunction with any Cache plugin.
+We recommend to use plugin in conjunction with any Cache plugin.
 
 = Русский =
 
 Плагин автоматически форматирует текст с использованием норм, правил и специфики русского языка и экранной типографики. Более подробно о возможностях плагина читайте описание [Типографа Муравьёва](http://mdash.ru/rules.html).
 
-Для оптимального быстродействия рекомендуем использовать совместно с любым плагином кэширования.
+Рекомендуем использовать плагин совместно с любым плагином кэширования.
 
 = Thank you =
 
-If you are happy with plugin your feedback is very appreciated. **Rate plugin** (see stars at the right) in Wordpress plugin directory or **write review** on your blog. 
+If you are happy with plugin your feedback is very appreciated. Rate plugin (see stars at the right) in Wordpress plugin directory or write review on your blog. 
 
 == Installation ==
 
