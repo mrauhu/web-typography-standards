@@ -12,7 +12,7 @@ Apply web typography standards to Wordpress content: space control, punctuation,
 
 == Description ==
 
-The plugin implements advanced rules of screen typography into Worpdress site. For features list see description of [Muravjev Typograph](http://translate.google.com/translate?hl=ru&sl=ru&tl=en&u=http%3A%2F%2Fmdash.ru%2Frules.html).
+The plugin implements advanced rules of web typography into Worpdress site. For features list see description of [Muravjev Typograph](http://translate.google.com/translate?hl=ru&sl=ru&tl=en&u=http%3A%2F%2Fmdash.ru%2Frules.html).
 
 For best performance we recommend to use plugin in conjunction with any Cache plugin.
 
