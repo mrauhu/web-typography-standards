@@ -4,7 +4,7 @@ Donate link: http://www.ram108.ru/donate
 Tags: typo, typograph, typography, typogrify, ram108, russian, content, dash, format, hyphenation, prettify, style, text, quotes, typesetting
 Requires at least: 3.3.3
 Tested up to: 4.1
-Stable tag: 0.2
+Stable tag: 0.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
