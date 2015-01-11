@@ -3,18 +3,18 @@
 Plugin Name: [ram108] Web Typography
 Plugin URI: http://wordpress.org/plugins/ram108-typo/
 Description: Apply web typography standards to Wordpress content: space control, punctuation, intelligent character replacement, CSS hooks and more.
-Version: 0.1
+Version: 0.2
 Author: ram108
 Author URI: http://profiles.wordpress.org/ram108
 Author Email: plugin@ram108.ru
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 ===========================================================
-Copyright 2014 by Kirill Borodin plugin@ram108.ru
+Copyright 2014 by Kirill Borodin plugin@ram108.ru 
 http://www.ram108.ru/donate
 OM SAI RAM
 ===========================================================
-Muravjev Typograph original script http://mdash.ru
+Muravjev Typograph v3.4 Gold Master http://mdash.ru
 */
 
 // init typo
@@ -41,4 +41,5 @@ function ram108_typo_change_filter(){
 	if ( 'wptexturize' == $id ) $wp_filter[ $tag ] [ $priority ] [ $id ] ['function'] = 'ram108_typo_wptexturize';
 }
 
+// activate plugin
 add_action('init', 'ram108_typo_change_filter', 100);
