@@ -1,4 +1,4 @@
-=== Web Typography ===
+=== Web Typography Standards ===
 Contributors: ram108
 Donate link: http://www.ram108.ru/donate
 Tags: typo, typograph, typography, typogrify, ram108, russian, content, dash, format, hyphenation, prettify, style, text, quotes, typesetting

@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: [ram108] Web Typography
+Plugin Name: [ram108] Web Typography Standards 
 Plugin URI: http://wordpress.org/plugins/ram108-typo/
 Description: Apply web typography standards to Wordpress content: space control, punctuation, intelligent character replacement, CSS hooks and more.
 Version: 0.2
