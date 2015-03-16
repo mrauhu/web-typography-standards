@@ -37,7 +37,7 @@ Install and activate the plugin as usual. There is no settings page. The plugin 
 == Changelog ==
 
 = 0.2.2 =
-* OptAlign.all tuned off to avoid excess <span> and hanging punctuation marks
+* OptAlign.all tuned off to avoid excess 'span' and hanging punctuation marks
 
 = 0.2 =
 * Updated original mdash script to v3.4 Golden Master
