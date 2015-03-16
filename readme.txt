@@ -4,7 +4,7 @@ Donate link: http://www.ram108.ru/donate
 Tags: typo, typograph, typography, typogrify, ram108, russian, content, dash, format, hyphenation, prettify, style, text, quotes, typesetting
 Requires at least: 3.3.3
 Tested up to: 4.1
-Stable tag: 0.2.1
+Stable tag: 0.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,7 @@ We recommend to use plugin in conjunction with any Cache plugin.
 
 = Thank you =
 
-If you are happy with plugin your feedback is very appreciated. Rate plugin (see stars at the right) in Wordpress plugin directory or write review on your blog. 
+If you are happy with plugin your feedback is very appreciated. Rate plugin (see stars at the right) in Wordpress plugin directory or write review on your blog.
 
 == Installation ==
 
@@ -35,6 +35,9 @@ Install and activate the plugin as usual. There is no settings page. The plugin 
 1. Visual demonstration of plugin work
 
 == Changelog ==
+
+= 0.2.2 =
+* OptAlign.all tuned off to avoid excess <span> and hanging punctuation marks
 
 = 0.2 =
 * Updated original mdash script to v3.4 Golden Master

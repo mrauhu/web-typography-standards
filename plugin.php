@@ -1,20 +1,18 @@
 <?php
 /*
-Plugin Name: [ram108] Web Typography Standards 
+Plugin Name: [ram108] Web Typography Standards
 Plugin URI: http://wordpress.org/plugins/ram108-typo/
 Description: Apply web typography standards to Wordpress content: space control, punctuation, intelligent character replacement, CSS hooks and more.
-Version: 0.2.1
+Version: 0.2.2
 Author: ram108
 Author URI: http://profiles.wordpress.org/ram108
 Author Email: plugin@ram108.ru
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 ===========================================================
-Copyright 2014 by Kirill Borodin plugin@ram108.ru 
+Copyright 2014 by Kirill Borodin plugin@ram108.ru
 http://www.ram108.ru/donate
 OM SAI RAM
-===========================================================
-Muravjev Typograph v3.4 Gold Master http://mdash.ru
 */
 
 // init typo
@@ -23,7 +21,7 @@ $ram108_typo = new EMTypograph();
 $ram108_typo->setup(array(
 	'Text.paragraphs'		=> 'off',
 	'Text.breakline'		=> 'off',
-	'OptAlign.oa_oquote'	=> 'off',
+	'OptAlign.all'			=> 'off',
 ));
 
 // new wptextorize function with typo
@@ -36,9 +34,9 @@ function ram108_typo_wptexturize( $text ){
 // change all wptexturize filters to ram108_typo_wptexturize
 function ram108_typo_change_filter(){
 	global $wp_filter;
-	foreach ( $wp_filter as $tag => $filter_list ) 
-	foreach ( $filter_list as $priority => $data ) 
-	foreach ( $data as $id => $func ) 
+	foreach ( $wp_filter as $tag => $filter_list )
+	foreach ( $filter_list as $priority => $data )
+	foreach ( $data as $id => $func )
 	if ( 'wptexturize' == $id ) $wp_filter[ $tag ] [ $priority ] [ $id ] ['function'] = 'ram108_typo_wptexturize';
 }
 
