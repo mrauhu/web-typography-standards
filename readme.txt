@@ -7,7 +7,8 @@ Stable tag: 0.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Apply web typography standards to Wordpress content: space control, punctuation, intelligent character replacement, CSS hooks and more.
+Автоматическое применение правил типографики для WordPress.
+This plugin is designed only for the Russian language typography.
 
 == Description ==
 
