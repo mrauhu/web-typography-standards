@@ -1,6 +1,5 @@
 === Web Typography Standards ===
-Contributors: ram108
-Donate link: http://www.ram108.ru/donate
+Contributors: ram108, mrauhu
 Tags: typo, typograph, typography, typogrify, ram108, russian, content, dash, format, hyphenation, prettify, style, text, quotes, typesetting
 Requires at least: 3.3.3
 Tested up to: 4.1
