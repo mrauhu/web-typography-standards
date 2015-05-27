@@ -40,6 +40,33 @@ function EMT_run( $text ){
 }
 
 /**
+ * Change EMT safe tags
+ * with checking result of filter 'no_texturize_tags'
+ * @global EMTypograph $ram108_typo
+ * @param array $old Tags list before run filter
+ * @param array $new Tags list after run filter
+ */
+function EMT_safe_tags ( $old, $new ) {
+	global $ram108_typo;
+	
+	// Check for changes
+	$added_tags = array_diff( $old, $new );
+	$removed_tags = array_diff( $new, $old );
+	
+	if ( count( $added_tags ) > 0 ) {
+		foreach( $added_tags as $tag_to_add ) {
+			$ram108_typo->add_safe_tag($tag_to_add);
+		}
+	}
+	
+	if ( count( $removed_tags ) > 0 ) {
+		foreach( $removed_tags as $tag_to_remove ) {
+			$ram108_typo->remove_safe_block( $tag_to_remove );
+		}
+	}
+}
+
+/**
  * Change all wptexturize filters to EMT_wptexturize
  * @global string $wp_filter
  */
