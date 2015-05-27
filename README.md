@@ -8,7 +8,7 @@ WordPress plugin based on Eugene Muravjev Typograph. Current version only for Ru
 
 ### Создание сообщений об ошибках
 
-Если вы нашли ошибку, сообщите нам об этом [создав новую задачу](https://github.com/mrauhu/web-typography-standards/issues/new).
+Если вы нашли ошибку, сообщите нам об этом создав [новую задачу](https://github.com/mrauhu/web-typography-standards/issues/new).
 
 
 ### Написание и отправка заплаток
