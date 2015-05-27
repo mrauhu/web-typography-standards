@@ -89,6 +89,9 @@ function EMT_wptexturize( $text, $reset = false ) {
 	 * @param array $default_no_texturize_tags An array of HTML element names.
 	 */
 	$no_texturize_tags = apply_filters( 'no_texturize_tags', $default_no_texturize_tags );
+	
+	EMT_safe_tags( $default_no_texturize_shortcodes, $no_texturize_tags );
+	
 	/**
 	 * Filter the list of shortcodes not to texturize.
 	 *
@@ -98,7 +101,6 @@ function EMT_wptexturize( $text, $reset = false ) {
 	 */
 	$no_texturize_shortcodes = apply_filters( 'no_texturize_shortcodes', $default_no_texturize_shortcodes );
 
-	$no_texturize_tags_stack = array();
 	$no_texturize_shortcodes_stack = array();
 
 	// Look for shortcodes and HTML elements.
@@ -129,13 +131,6 @@ function EMT_wptexturize( $text, $reset = false ) {
 
 	$regex =
 		  '/('                   // Capture the entire match.
-		.     '<'                // Find start of element.
-		.     '(?(?=!--)'        // Is this a comment?
-		.         $comment_regex // Find end of comment.
-		.     '|'
-		.         '[^>]*>'       // Find end of element.
-		.     ')'
-		. '|'
 		.     $shortcode_regex   // Find shortcodes.
 		. ')/s';
 
@@ -144,17 +139,7 @@ function EMT_wptexturize( $text, $reset = false ) {
 	foreach ( $textarr as &$curl ) {
 		// Only call _wptexturize_pushpop_element if $curl is a delimiter.
 		$first = $curl[0];
-		if ( '<' === $first && '<!--' === substr( $curl, 0, 4 ) ) {
-			// This is an HTML comment delimeter.
-
-			continue;
-
-		} elseif ( '<' === $first && '>' === substr( $curl, -1 ) ) {
-			// This is an HTML element delimiter.
-
-			_wptexturize_pushpop_element( $curl, $no_texturize_tags_stack, $no_texturize_tags );
-
-		} elseif ( '' === trim( $curl ) ) {
+		if ( '' === trim( $curl ) ) {
 			// This is a newline between delimiters.  Performance improves when we check this.
 
 			continue;
@@ -170,7 +155,7 @@ function EMT_wptexturize( $text, $reset = false ) {
 				continue;
 			}
 
-		} elseif ( empty( $no_texturize_shortcodes_stack ) && empty( $no_texturize_tags_stack ) ) {
+		} elseif ( empty( $no_texturize_shortcodes_stack ) ) {
 			// This is neither a delimiter, nor is this content inside of no_texturize pairs.  Do texturize.
 
 			$curl = str_replace( $static_characters, $static_replacements, $curl );
