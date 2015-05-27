@@ -3,7 +3,7 @@
 /**
  * Part from WordPress Formatting API.
  * 
- * Added for make Web Typography Standards comportable with WordPress hooks
+ * Added for make Web Typography Standards comportable with WordPress filters
  *
  */
 
