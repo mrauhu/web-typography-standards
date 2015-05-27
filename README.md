@@ -24,7 +24,7 @@ WordPress plugin based on Eugene Muravjev Typograph. Current version only for Ru
 
 ## Ссылки
 
-### Плагин Web Typography Standarts на WordPress.org
+### Плагин Web Typography Standards на WordPress.org
 
 * [Описание](https://wordpress.org/plugins/ram108-typo/)
 * [Обзоры](https://wordpress.org/support/view/plugin-reviews/ram108-typo)
