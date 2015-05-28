@@ -14,11 +14,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Плагин автоматически форматирует текст с использованием норм, правил и специфики русского языка и экранной типографики. Более подробно о возможностях плагина читайте описание [Типографа Муравьёва](http://mdash.ru/rules.html).
 
+> *Web Typography Standards* совместим с [шорткодами](https://codex.wordpress.org/ru:Shortcode_API) и фильтрами функции [wptexturize](https://codex.wordpress.org/Function_Reference/wptexturize).
+
 Рекомендуем использовать плагин совместно с любым плагином кэширования.
 
 = Спасибо вам =
 
-Если вам нравится плагин, ваш отзыв очень важен для нас. Оцените плагин (смотрите звездочки справа) в директории плагинов WordPress или напишите обзор в своем блоге.
+Если вам нравится плагин, ваш отзыв очень важен для нас. [Оцените плагин](https://wordpress.org/support/view/plugin-reviews/ram108-typo#postform) в директории плагинов WordPress или напишите обзор в своем блоге.
 
 = Разработка =
 
@@ -34,11 +36,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 The plugin implements advanced rules of web typography into Worpdress site. For full features list see description of [Muravjev Typograph](http://translate.google.com/translate?hl=ru&sl=ru&tl=en&u=http%3A%2F%2Fmdash.ru%2Frules.html).
 
+> *Web Typography Standards* comportable with [shortcodes](https://codex.wordpress.org/Shortcode_API) and filters of [wptexturize](https://codex.wordpress.org/Function_Reference/wptexturize) function.
+
 We recommend to use plugin in conjunction with any Cache plugin.
 
 = Thank you =
 
-If you are happy with plugin your feedback is very appreciated. Rate plugin (see stars at the right) in Wordpress plugin directory or write review on your blog.
+If you are happy with plugin your feedback is very appreciated. [Rate plugin](https://wordpress.org/support/view/plugin-reviews/ram108-typo#postform) (see stars at the right) in Wordpress plugin directory or write review on your blog.
 
 = Development =
 
@@ -61,6 +65,10 @@ Install and activate the plugin as usual. There is no settings page. The plugin 
 1. Visual demonstration of plugin work
 
 == Changelog ==
+
+= 0.3.2 =
+
+Added information about shortcodes and Wordpress filters comportability.
 
 = 0.3.1 =
 
