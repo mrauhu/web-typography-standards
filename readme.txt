@@ -3,12 +3,12 @@ Contributors: ram108, mrauhu
 Tags: typo, typograph, typography, typogrify, ram108, russian, content, dash, format, hyphenation, prettify, style, text, quotes, typesetting
 Requires at least: 3.3.3
 Tested up to: 4.2.2
-Stable tag: 0.3
+Stable tag: 0.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Автоматическое применение правил типографики для WordPress. 
-This plugin is designed only for the Russian language typography.
+Автоматическое применение правил типографики для WordPress.
+Оnly for the Russian language typography
 
 == Description ==
 
@@ -61,6 +61,10 @@ Install and activate the plugin as usual. There is no settings page. The plugin 
 1. Visual demonstration of plugin work
 
 == Changelog ==
+
+= 0.3.1 =
+
+Fixed version for autoupdate and short description length.
 
 = 0.3 =
 
