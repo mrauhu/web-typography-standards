@@ -3,7 +3,7 @@
 Plugin Name: [ram108] Web Typography Standards
 Plugin URI: http://wordpress.org/plugins/ram108-typo/
 Description: Автоматически форматирует текст с использованием норм, правил и специфики русского языка и экранной типографики. Оnly for the Russian language typography.
-Version: 0.5.2
+Version: 0.5.3
 Author: ram108, mrauhu
 Author URI: http://profiles.wordpress.org/ram108
 Author Email: plugin@ram108.ru
@@ -29,9 +29,14 @@ $ignored_hooks = array(
 // Init typograph
 $ram108_typo = new EMTypograph();
 $ram108_typo->setup(array(
-	'Text.paragraphs'		=> 'off',
-	'Text.breakline'		=> 'off',
-	'OptAlign.all'			=> 'off',
+	// WordPress have `wpautop( $text, $preserve_line_br = true )`
+	'Text.paragraphs'		            => 'off',
+	'Text.breakline'	               	=> 'off',
+	// CSS-based, may break design of page
+	'OptAlign.all'		            	=> 'off',
+	// Fix: bug with Russian abbreviations, like: `Госдума РФ` -> `Госдума Р. Ф.`
+	'Nobr.dots_for_surname_abbr'        => 'off',
+	'Nobr.spaces_nobr_in_surname_abbr'  => 'off',
 ));
 
 /**
