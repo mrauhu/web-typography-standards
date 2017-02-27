@@ -3,7 +3,7 @@
 Plugin Name: [ram108] Web Typography Standards
 Plugin URI: http://wordpress.org/plugins/ram108-typo/
 Description: Apply web typography standards to Wordpress content: space control, punctuation, intelligent character replacement, CSS hooks and more.
-Version: 0.3.2
+Version: 0.4.0
 Author: ram108
 Author URI: http://profiles.wordpress.org/ram108
 Author Email: plugin@ram108.ru
@@ -76,7 +76,9 @@ function ram108_typo_change_filter(){
 		foreach ( $filter_list as $priority => $data ) {
 			foreach ( $data as $id => $func ) {
 				if ( 'wptexturize' == $id ) {
-					$wp_filter[ $tag ] [ $priority ] [ $id ] ['function'] = 'EMT_wptexturize';
+					// Fix: WordPress 4.7+ comparability
+					remove_filter($tag, 'wptexturize');
+					add_filter($tag, 'EMT_wptexturize', $priority - 1);
 				}
 			}
 		}
