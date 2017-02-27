@@ -3,7 +3,7 @@
 Plugin Name: [ram108] Web Typography Standards
 Plugin URI: http://wordpress.org/plugins/ram108-typo/
 Description: Автоматически форматирует текст с использованием норм, правил и специфики русского языка и экранной типографики. Оnly for the Russian language typography.
-Version: 0.5.0
+Version: 0.5.1
 Author: ram108, mrauhu
 Author URI: http://profiles.wordpress.org/ram108
 Author Email: plugin@ram108.ru
@@ -18,6 +18,13 @@ OM SAI RAM
 // Load libraries
 require_once('EMT.php');
 require_once('EMT_wptexturize.php');
+
+/**
+ * Hooks that use `wptexturize()`
+ */
+$ignored_hooks = array(
+	'wp_title' => true, // Fix: no space between `|` symbol and Blog name
+);
 
 // Init typograph
 $ram108_typo = new EMTypograph();
@@ -45,7 +52,14 @@ function EMT_run( $text ){
  */
 function ram108_typo_change_filter(){
 	global $wp_filter;
+	global $ignored_hooks;
+
 	foreach ( $wp_filter as $tag => $filter_list ) {
+		// Use `wptexturize()` filter for ignored hooks
+		if (isset($ignored_hooks[$tag])) {
+			continue;
+		}
+
 		foreach ( $filter_list as $priority => $data ) {
 			foreach ( $data as $id => $func ) {
 				if ( 'wptexturize' == $id ) {
