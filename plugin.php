@@ -3,7 +3,7 @@
 Plugin Name: [ram108] Web Typography Standards
 Plugin URI: http://wordpress.org/plugins/ram108-typo/
 Description: Автоматически форматирует текст с использованием норм, правил и специфики русского языка и экранной типографики. Оnly for the Russian language typography.
-Version: 0.5.4
+Version: 0.6.0
 Author: ram108, mrauhu
 Author URI: http://profiles.wordpress.org/ram108
 Author Email: plugin@ram108.ru
