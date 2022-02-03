@@ -2648,7 +2648,7 @@ class EMT_Base
      * @param   bool $way
 	 * @return  string
 	 */
-	public function safe_blocks($text, $way, $way = true)
+	public function safe_blocks($text, $way)
 	{
 		if (count($this->_safe_blocks))
 		{
