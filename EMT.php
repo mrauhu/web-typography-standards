@@ -2652,11 +2652,13 @@ class EMT_Base
 	{
 		if (count($this->_safe_blocks))
 		{
-			$safeType = true === $way ? "EMT_Lib::encrypt_tag(\$m[2])" : "stripslashes(EMT_Lib::decrypt_tag(\$m[2]))";
 			$safeblocks = true === $way ? $this->_safe_blocks : array_reverse($this->_safe_blocks);
 			foreach ($safeblocks as $block)
 			{
-				$text = preg_replace_callback("/({$block['open']})(.+?)({$block['close']})/s", function($m) use ($safeType) {return $m[1].$safeType.$m[3];}, $text);
+        		$text = preg_replace_callback("/({$block['open']})(.+?)({$block['close']})/s", function($m) use($way) {
+					// ram108 fix for safeType
+					return $m[1].( true === $way ? EMT_Lib::encrypt_tag($m[2]) : stripslashes(EMT_Lib::decrypt_tag($m[2])) ).$m[3];
+				}, $text);
 			}
 		}
 
