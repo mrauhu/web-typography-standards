@@ -3,7 +3,7 @@ Contributors: ram108, mrauhu
 Tags: typo, typograph, typography, typogrify, ram108, russian, content, dash, format, hyphenation, prettify, style, text, quotes, typesetting
 Requires at least: 3.3.3
 Tested up to: 5.9
-Stable tag: 0.6.2
+Stable tag: 0.6.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,6 +65,10 @@ Install and activate the plugin as usual. There is no settings page. The plugin 
 1. Visual demonstration of plugin work
 
 == Changelog ==
+
+= 0.6.4 =
+
+Fixed stable tag version.
 
 = 0.6.3 =
 
