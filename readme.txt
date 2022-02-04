@@ -2,7 +2,7 @@
 Contributors: ram108, mrauhu
 Tags: typo, typograph, typography, typogrify, ram108, russian, content, dash, format, hyphenation, prettify, style, text, quotes, typesetting
 Requires at least: 3.3.3
-Tested up to: 4.7.2
+Tested up to: 5.9
 Stable tag: 0.6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
