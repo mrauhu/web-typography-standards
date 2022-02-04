@@ -66,6 +66,10 @@ Install and activate the plugin as usual. There is no settings page. The plugin 
 
 == Changelog ==
 
+= 0.6.3 =
+
+Updated tested up version to WordPress 5.9.
+
 = 0.6.2 =
 
 Added ram108 fix for the `$safeType` in the `safe_blocks()` function.
